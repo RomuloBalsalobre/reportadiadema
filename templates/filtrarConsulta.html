@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/filtrarConsulta.css') }}">
+    <link rel="stylesheet" href="../static/css/filtrarConsulta.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="consulta"><img src="{{ url_for('static', filename='logo.png') }}" href="Paginainicial" alt="Corinthians"></a>
+        <img src="../static/logo.png" href="../templates/PaginaInicialAPI.html" alt="LogotiporeportaDiadema">
         </div>
         <div class="page-title">
             <h1>Reporta Diadema</h1>
         </div>
         <div class="btns">
             <button class="PgInicialBtn">
-                <a href="Paginainicial"><i class="fas fa-undo"></i>Início</a>
+                <a href="../templates/PaginaInicialAPI.html"><i class="fas fa-undo"></i>Início</a>
             </button>
         </div>
     </header>
@@ -41,6 +41,9 @@
                 <option value="Roubo">Roubo</option>
                 <option value="Iluminação">Iluminação</option>
                 <option value="Buraco">Buraco</option>
+                <option value="Alagamento">Alagamento</option>
+                <option value="Falta de água">Falta de água</option>
+                <option value="Outros">Outros</option>
             </select>
          <!--   <button type="submit" id="btn_selecao"><i class="fa-solid fa-magnifying-glass"></i></button> -->
                 <label for="bairro">Bairro:</label>
@@ -81,7 +84,7 @@
                 </form>
            <!-- </div>-->
             <button class="VoltarBtn">
-                <a href="consulta"><i class="fas fa-undo"></i>Limpar</a>
+                <a href="../templates/filtrarConsulta.html"><i class="fas fa-undo"></i>Limpar</a>
             </button>
         </div>
     </div>
@@ -277,21 +280,16 @@
         text-align: center;
     }
 
-    .toggle-contrast {
-        background-color: #000000; /* Fundo do botão em modo escuro */
-        color: #ffffff; /* Texto do botão em modo claro */
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 5px 10px;
-    }
+    
 
-    .toggle-contrast:hover {
-        background-color: #333333; /* Efeito hover no botão */
+ 
+    .alto-contraste {
+      background-color: #000000;
+      color: #ffffff;
     }
   </style>
 
-  <script src="{{ url_for('static', filename='js/consulta.js') }}"></script>
+  <script src="../static/js/consulta.js"></script>
 </footer>
 
 </footer>
