@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="../static/css/filtrarConsulta.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/filtrarConsulta.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-        <img src="../static/logo.png" href="../templates/PaginaInicialAPI.html" alt="LogotiporeportaDiadema">
+        <a href="consulta"><img src="{{ url_for('static', filename='logo.png') }}" href="Paginainicial" alt="Corinthians"></a>
         </div>
         <div class="page-title">
             <h1>Reporta Diadema</h1>
         </div>
         <div class="btns">
             <button class="PgInicialBtn">
-                <a href="../templates/PaginaInicialAPI.html"><i class="fas fa-undo"></i>Início</a>
+                <a href="Paginainicial"><i class="fas fa-undo"></i>Início</a>
             </button>
         </div>
     </header>
@@ -84,7 +84,7 @@
                 </form>
            <!-- </div>-->
             <button class="VoltarBtn">
-                <a href="../templates/filtrarConsulta.html"><i class="fas fa-undo"></i>Limpar</a>
+                <a href="consulta"><i class="fas fa-undo"></i>Limpar</a>
             </button>
         </div>
     </div>
@@ -289,7 +289,7 @@
     }
   </style>
 
-  <script src="../static/js/consulta.js"></script>
+  <script src="{{ url_for('static', filename='js/consulta.js') }}"></script>
 </footer>
 
 </footer>
