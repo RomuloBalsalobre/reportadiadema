@@ -87,10 +87,13 @@
         <option value="Roubo" {% if tipoProblema == "Roubo" %}selected{% endif %}>Roubo</option>
         <option value="Iluminação" {% if tipoProblema == "Iluminação" %}selected{% endif %}>Iluminação</option>
         <option value="Buraco" {% if tipoProblema == "Buraco" %}selected{% endif %}>Buraco</option>
+        <option value="Alagamento" {% if tipoProblema == "Alagamento" %}selected{% endif %}>Alagamento</option>
+        <option value="Falta de água" {% if tipoProblema == "Falta de água" %}selected{% endif %}>Falta de água</option>
+        <option value="Outros" {% if tipoProblema == "Outros" %}selected{% endif %}>Outros</option>
       </select>
 
       <div style="display: flex; align-items: center;">
-        <input maxlength="50" type="text" name="rua" placeholder="Rua onde ocorreu o crime" value="{{rua}}" required>
+         <input maxlength="50" type="text" name="rua" placeholder="Rua onde ocorreu o crime" value="{{rua}}" required>
       </div>
       <div class="form-row">
         <select name="bairro" required>

@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #0e99449c;
+    background-color: #2c4bd69c;
     color: #ffffff;
     padding: 0px 30px 0px 30px;
     position: relative;
@@ -87,7 +87,7 @@
     }
 
   form {
-    background-color: #0e99449c;
+    background-color: #2c4bd69c;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -177,7 +177,7 @@
   position: absolute;
   top: 100%; /* Posiciona o menu logo abaixo do botão */
   right: 0;
-  background-color: #0a682e9c;
+  background-color: #0930ddb4;
   padding: 10px;
   border-radius: 4px;
   width: 20%; /* Define a largura do menu */
@@ -194,7 +194,7 @@
 }
 
 .menu a:hover {
-  background-color: #04220f;
+  background-color: #1d1f1e;
 }
 
 /* Classe para mostrar o menu */

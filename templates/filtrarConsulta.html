@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="consulta"><img src="{{ url_for('static', filename='logo.png') }}" href="Paginainicial" alt="Corinthians"></a>
+        <a href="consulta"><img src="{{ url_for('static', filename='logo.png') }}" href="Paginainicial" alt="Corinthians"></a>
         </div>
         <div class="page-title">
             <h1>Reporta Diadema</h1>
@@ -41,6 +41,9 @@
                 <option value="Roubo">Roubo</option>
                 <option value="Iluminação">Iluminação</option>
                 <option value="Buraco">Buraco</option>
+                <option value="Alagamento">Alagamento</option>
+                <option value="Falta de água">Falta de água</option>
+                <option value="Outros">Outros</option>
             </select>
          <!--   <button type="submit" id="btn_selecao"><i class="fa-solid fa-magnifying-glass"></i></button> -->
                 <label for="bairro">Bairro:</label>
@@ -277,17 +280,12 @@
         text-align: center;
     }
 
-    .toggle-contrast {
-        background-color: #000000; /* Fundo do botão em modo escuro */
-        color: #ffffff; /* Texto do botão em modo claro */
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 5px 10px;
-    }
+    
 
-    .toggle-contrast:hover {
-        background-color: #333333; /* Efeito hover no botão */
+ 
+    .alto-contraste {
+      background-color: #000000;
+      color: #ffffff;
     }
   </style>
 
